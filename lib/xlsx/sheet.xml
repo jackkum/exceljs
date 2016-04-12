@@ -62,4 +62,8 @@
   <% } %>
   
   <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+  
+  <% if (typeof pageSetup !== 'undefined') { %>
+  <pageSetup paperSize="<%=pageSetup.paperSize%>" scale="<%=pageSetup.scale%>" firstPageNumber="<%=pageSetup.firstPageNumber%>" fitToWidth="<%=fitToWidth%>" fitToHeight="<%=fitToHeight%>" pageOrder="<%=pageSetup.pageOrder%>" orientation="<%=pageSetup.orientation%>" usePrinterDefaults="<%=pageSetup.usePrinterDefaults%>" blackAndWhite="<%=pageSetup.blackAndWhite%>" draft="<%=pageSetup.draft%>" cellComments="<%=pageSetup.cellComments%>" useFirstPageNumber="<%=pageSetup.useFirstPageNumber%>" horizontalDpi="<%=pageSetup.horizontalDpi%>" verticalDpi="<%=pageSetup.verticalDpi%>" copies="<%=pageSetup.copies%>"/>
+  <% } %>
 </worksheet>
